@@ -1,0 +1,149 @@
+[
+  {
+    "name": "eCentennial",
+    "type": "personal",
+    "class": "bg-red",
+    "title": "UX UI case study",
+    "description": "Design and Development",
+    "year": 2022,
+    "path": "/ecentennial-website/",
+    "thumb": "/img/projects/myCent/thumb.png",
+    "images": [
+      "/img/projects/myCent/1.png",
+      "/img/projects/myCent/2.png",
+      "/img/projects/myCent/3.png",
+      "/img/projects/myCent/4.png",
+      "/img/projects/myCent/5.png",
+      "/img/projects/myCent/6.png",
+      "/img/projects/myCent/7.png",
+      "/img/projects/myCent/8.png",
+      "/img/projects/myCent/9.png"
+    ]
+  },
+  {
+      "name": "Kam Yeung Machinery",
+      "type": "commercial",
+      "class": "bg-yellow",
+      "title": "Website",
+      "description": "Design and Development",
+      "year": 2019,
+      "path": "/kymco-website/",
+      "thumb": "/img/projects/kymco/thumb.png",
+      "images": [
+        "/img/projects/kymco/1.png",
+        "/img/projects/kymco/2.png"
+      ]
+  },
+  {
+      "name": "Kam Yeung Machinery",
+      "type": "commercial",
+      "class": "bg-yellow",
+      "title": "Logo Design",
+      "description": "Graphic Design",
+      "year": 2017,
+      "path": "/kymco-logo/",
+      "thumb": "/img/projects/kymco-logo/thumb.png",
+      "images": [
+        "/img/projects/kymco-logo/1.png",
+        "/img/projects/kymco-logo/2.png",
+        "/img/projects/kymco-logo/3.png",
+        "/img/projects/kymco-logo/4.png",
+        "/img/projects/kymco-logo/5.png",
+        "/img/projects/kymco-logo/6.png",
+        "/img/projects/kymco-logo/7.png",
+        "/img/projects/kymco-logo/8.png",
+        "/img/projects/kymco-logo/9.png",
+        "/img/projects/kymco-logo/10.png",
+        "/img/projects/kymco-logo/11.png"
+      ]
+  },
+  {
+    "name": "Hankong group",
+    "type": "commercial",
+    "class": "bg-blue",
+    "title": "Logo Design",
+    "description": "Graphic Design",
+    "year": 2014,
+    "path": "/hankong-logo/",
+    "thumb": "/img/projects/hankong/thumb.png",
+    "images": [
+      "/img/projects/hankong/thumb.png"
+    ]
+  },
+  {
+    "name": "DGG",
+    "type": "commercial",
+    "class": "bg-red",
+    "title": "Logo Design",
+    "description": "Graphic Design",
+    "year": 2014,
+    "path": "/dgg/",
+    "thumb": "/img/projects/dgg/thumb.png",
+    "images": [
+      "/img/projects/dgg/1.png",
+      "/img/projects/dgg/2.png",
+      "/img/projects/dgg/3.png",
+      "/img/projects/dgg/4.png",
+      "/img/projects/dgg/5.png",
+      "/img/projects/dgg/6.png",
+      "/img/projects/dgg/7.png",
+      "/img/projects/dgg/8.png"
+    ]
+  },
+  {
+    "name": "Moon Thai",
+    "type": "commercial",
+    "class": "bg-green",
+    "title": "Website",
+    "description": "Design and Development",
+    "year": 2012,
+    "path": "/moonthai/",
+    "thumb": "/img/projects/moonthai/thumb.png",
+    "images": [
+      "/img/projects/moonthai/1.png",
+      "/img/projects/moonthai/2.png"
+    ]
+  },
+  {
+    "name": "Fnet",
+    "type": "commercial",
+    "class": "bg-green",
+    "title": "Website",
+    "description": "Front-end Development",
+    "year": 2020,
+    "path": "/fnet/",
+    "thumb": "/img/projects/fnet/thumb.png",
+    "images": [
+      "/img/projects/fnet/1.png",
+      "/img/projects/fnet/2.png"
+    ]
+  },
+  {
+    "name": "Rpmacau",
+    "type": "commercial",
+    "class": "bg-green",
+    "title": "Website",
+    "description": "Design and Development",
+    "year": 2020,
+    "path": "/rpmacau/",
+    "thumb": "/img/projects/rpmacau/thumb.png",
+    "images": [
+      "/img/projects/rpmacau/1.png",
+      "/img/projects/rpmacau/2.png"
+    ]
+  },
+  {
+    "name": "Sanki",
+    "type": "commercial",
+    "class": "bg-blue",
+    "title": "Poster",
+    "description": "Graphic design",
+    "year": 2020,
+    "path": "/sanki-poster/",
+    "thumb": "/img/projects/sanki-poster/thumb.png",
+    "images": [
+      "/img/projects/sanki-poster/1.png"
+    ]
+  }
+]
+  

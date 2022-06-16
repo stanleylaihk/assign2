@@ -1,0 +1,43 @@
+<%- include('./partials/header'); %>
+<div id="contact" class="row">
+    <div class="col-12 col-lg-6">
+        <div class="information">
+            <h1>Let's Get In Touch</h1>
+            or drop me email by <a class="text-red">hello@stanleylai.com</a>
+        </div>
+        <div class="img-responsive img-centered d-none d-lg-block"><img src="/img/image4.png" alt=""></div>
+    </div>
+    <div class="col-12 col-lg-6">
+        <form method="POST" id="form-contact" enctype="multipart/form-data" autocomplete="off">
+        <div class="row">
+            <% if(errorInput){ %>
+            <div class="col-12">
+                <div class="text-red">Invalid input, please enter all input</div>
+            </div>
+            <% } %>
+            <div class="col-12 col-xl-6 mb-3">
+                <label for="input-name" class="form-label">Your name*</label>
+                <input type="text" name="inputName" class="form-control" id="input-name" required>
+            </div>
+            <div class="col-12 col-xl-6 mb-3">
+                <label for="input-email" class="form-label">Email address*</label>
+                <input type="text" name="inputEmail" class="form-control" id="input-email" required>
+            </div>
+            <div class="col-12 mb-3">
+                <label for="input-subject" class="form-label">Subject*</label>
+                <input type="text" name="inputSubject" class="form-control" id="input-subject" required>
+            </div>
+            <div class="col-12 mb-3">
+                <label for="input-message" class="form-label">Message</label>
+                <textarea class="form-control" name="inputMessage" id="input-message" rows="3"></textarea>
+            </div>
+            <div class="col-12">
+                <input type="submit" class="btn btn-outline-blue" value="Send" /> 
+            </div>
+
+        </div>
+    </form>
+    </div>
+</div>
+
+<%- include('./partials/footer'); %>

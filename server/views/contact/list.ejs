@@ -1,0 +1,50 @@
+<%- include ../partials/header.ejs %>
+<div class="row">
+    <div class="col-8 m-auto pt-5">
+        <h1>Business Contacts List</h1>
+        <div class="card">
+            <div class="card-body">
+                <div class="text-end mb-3">
+                    <a href="/contact-list/add" class="btn btn-outline-blue" role="button"><i class="bi bi-plus-lg"></i> Add Contact</a>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-sm table-hover">
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Number</td>
+                                <td>Email</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% if (ContactList.length > 0) { %>
+                            <% for(let count = 0; count < ContactList.length; count++) { %>
+                            <tr>
+                                <td><%= ContactList[count].name %></td>
+                                <td><%= ContactList[count].number %></td>
+                                <td><%= ContactList[count].email %></td>
+                                <td class="text-end">
+                                    <a href="/contact-list/update/<%= ContactList[count]._id %>" class="btn btn-outline-blue btn-sm">
+                                        <i class="bi bi-pencil"></i> Update</a>
+                                    <a href="/contact-list/delete/<%= ContactList[count]._id %>" class="btn btn-outline-red btn-sm">
+                                        <i class="bi bi-trash"></i> Delete</a>
+                                </td>
+                            </tr>
+                            <% } %>
+                            <% } else { %>
+                                <tr>
+                                    <td colspan="3" class="text-center p-3">Empty! No Records!</td>
+                                </tr>
+                            <% } %>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- <div class="text-center">
+                    <a href="/register" class="btn btn-outline-blue">Register</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+<%- include ../partials/footer.ejs %>

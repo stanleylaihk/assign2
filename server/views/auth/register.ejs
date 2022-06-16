@@ -1,0 +1,32 @@
+<%- include ../partials/header.ejs %>
+<!-- Message Area -->
+<% if(messages.length > 0) {%>
+    <div class="alert alert-danger">
+        <%= messages %>
+    </div>
+<% } %>
+<div class="row">
+    <div class="offset-md-3 col-md-6">
+        <h1 class="my-5">Register</h1>
+
+        <form class="form" method="POST" autocomplete="off">
+            <label for="input-username" class="form-label">Username</label>
+            <input type="text" value="admin" class="form-control mb-3" id="input-username" name="username" autofocus required>
+        
+            <label for="input-password" class="form-label">Password</label>
+            <input type="password" class="form-control mb-3" id="input-password" name="password" required>
+
+            <label for="input-email" class="form-label">Email</label>
+            <input type="text" class="form-control mb-3" id="input-email" name="email" required>
+
+            <label for="input-displayName" class="form-label">Display Name</label>
+            <input type="text" class="form-control mb-3" id="input-displayName" name="displayName" required>
+
+            <div class="d-flex justify-content-between p-3">
+                <a href="/" class="btn"><i class="bi bi-reply"></i> Cancel</a>
+                <button class="btn btn-outline-blue" type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</div>
+<%- include ../partials/footer.ejs %>

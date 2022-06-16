@@ -1,0 +1,68 @@
+<%- include('./partials/header'); %>
+<div id="services" class="row">
+    <h1>My services</h1>
+    <div class="col-4">
+        <div class="card card-red tilter">
+            <div class="card-body">
+                <div class="text-center"><img src="/img/image1.png" alt="" width="200"></div>
+                <div class="card-title">UI/UX design</div>
+                <div class="card-text">
+                    <ul>
+                        <li>Responsive Web design</li>
+                        <li>Enchance user experience</li>
+                        <li>Cross browser support</li>
+                        <li>SEO friendly</li>
+                        <li>Social media SEO friedly</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card card-yellow tilter">
+            <div class="card-body">
+                <div class="text-center"><img src="/img/image2.png" alt="" width="200"></div>
+                <div class="card-title">Web Development</div>
+                <div class="card-text">
+                    <ul>
+                        <li>Full Stack website</li>
+                        <li>Corporate Website</li>
+                        <li>Ecommerence</li>
+                        <li>Custom CMS</li>
+                        <li>Custom Module</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-4 ">
+        <div class="card card-green tilter">
+            <div class="card-body">
+                <div class="text-center"><img src="/img/image3.png" alt="" width="200"></div>
+                <div class="card-title fx3d">Graphic Design</div>
+                <div class="card-text">
+                    <ul>
+                        <li>Web design</li>
+                        <li>Digital ad design</li>
+                        <li>Printing design</li>
+                        <li>Email design</li>
+                        <li>Logo design</li>
+                        <!-- <li>Canva templates</li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+window.addEventListener('load', () => {
+    tilter('.tilter', {
+    perspective: 300,
+    maxTilt: 4,
+    mantain: false,
+    fx3d: true,
+    fxDistance: 100,
+    });
+});
+</script>
+<%- include('./partials/footer'); %>

@@ -1,0 +1,34 @@
+<%- include ../partials/header.ejs %>
+    <div class="row">
+        <div class="col-8 m-auto pt-5">
+            <h1>User List</h1>
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-sm table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <td>Username</td>
+                                    <td>Email</td>
+                                    <td>Display Name</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% for(let count = 0; count < UserList.length; count++) { %>
+                                <tr>
+                                    <td><%= UserList[count].username %></td>
+                                    <td><%= UserList[count].email %></td>
+                                    <td><%= UserList[count].displayName %></td>
+                                </tr>
+                                <% } %>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- <div class="text-center">
+                        <a href="/register" class="btn btn-outline-blue">Register</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+<%- include ../partials/footer.ejs %>

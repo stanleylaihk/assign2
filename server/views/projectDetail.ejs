@@ -1,0 +1,15 @@
+<%- include('./partials/header'); %>
+<div id="project-detail" class="row">
+	<div class="card">
+        <% for(var i=0; i<images.length; i++) {%>
+            <div class="image"><img src="<%= images[i] %>" alt="" class="img-fluid"></div>
+         <% } %>
+		<div>
+			<h2><%= title %></h2>
+			<div class="tag">
+				<div>#<%= year %></div> <div>#<%= title %></div> <div>#<%= desc %></div><a href="/projects" class="btn btn-outline-blue">return</a>
+			</div>
+		</div>
+	</div>
+</div>
+<%- include('./partials/footer'); %>

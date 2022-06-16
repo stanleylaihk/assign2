@@ -1,0 +1,51 @@
+<%- include('./partials/header'); %>
+<div id="projects" class="row">
+	<div class="projects row">
+		<div class="col-12"><h2>Commercial Projects</h2></div>
+		<% for(var i=0; i< projectsData.length; i++) { %>
+		<% if(projectsData[i].type == "commercial") { %>
+		<div class="col-4 col-xl-3">
+			<a href="/projects<%= projectsData[i].path %>">
+				<div class="card <%= projectsData[i].class %>">
+					<div class="thumb">
+						<img src="<%= projectsData[i].thumb %>" alt="">
+					</div>
+					<div class="card-body">
+						<h3 class="card-title"><%= projectsData[i].title %></h3>
+						<div><%= projectsData[i].name %></div>
+						<span class="text-muted"><%= projectsData[i].year %></span>
+					</div>
+				</div>
+			</a>
+		</div>
+		<% } %>
+		<% } %>
+	</div>
+
+	<div class="projects row">
+		<div class="col-12"><h2>Personal Projects</h2></div>
+		<div class="col-4 col-xl-3">
+			<% for(var i=0; i< projectsData.length; i++) { %>
+			<% if(projectsData[i].type == "personal") { %>	
+			<a href="/projects<%= projectsData[i].path %>">
+				<div class="card <%= projectsData[i].class %>">
+					<div class="thumb">
+						<img src="<%= projectsData[i].thumb %>" alt="">
+					</div>
+					<div class="card-body">
+						<h3 class="card-title"><%= projectsData[i].title %></h3>
+						<div><%= projectsData[i].description %></div>
+						<span class="text-muted"><%= projectsData[i].year %></span>
+					</div>
+				</div>
+			</a>
+			<% } %>
+			<% } %>
+		</div>
+	</div>
+
+</div>
+
+
+
+<%- include('./partials/footer'); %>

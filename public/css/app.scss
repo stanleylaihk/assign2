@@ -1,0 +1,225 @@
+/* 
+Student name: Stanley Lai
+Student No: 301201143
+File: style.scss 
+Date: June 2, 2022
+*/
+
+/* reset  */
+*, *::before, *::after {box-sizing: border-box;}
+* {margin: 0;}
+html, body {height: 100%;}
+body {line-height: 1.5; font-size:16;  -webkit-font-smoothing: antialiased;}
+a, button, a:hover{cursor: pointer; color: inherit; text-decoration:none;}
+img, picture, video, canvas, svg {display: inline-block; max-width: 100%;}
+input, button, textarea, select {font: inherit; font-size: 1rem;}
+p, h1, h2, h3, h4, h5, h6 {overflow-wrap: break-word;}
+
+/* Variables */
+$bg-color: #F9F9FF;
+$font-color: #45445F;
+$red: #F77C8D;
+$yellow: #F8D659;
+$green: #4DD6B6;
+$blue: #6D70E2;
+
+/* Override Bootstrap */
+.card{border-radius: 30px; border:none; box-shadow:0px 0px 10px rgba(0,0,0, 0.1); overflow:hidden;}
+
+.navbar {
+    .nav-item{
+        .nav-link{
+            padding:15px 10px; font-size:20px; border-radius:30px; color: $font-color;
+        
+            &:hover{color: $red;}
+        }
+    }
+    .dropdown-menu { 
+        min-width:250px; 
+        .nav-link{ padding: 0 15px;}
+    } 
+}
+
+input.form-control, textarea.form-control{border:none; padding:15px; border-radius:30px; box-shadow:0px 0px 10px rgba(0,0,0, 0.1);}
+
+/* Custom */
+body{font-family: 'Poppins', sans-serif; background: $bg-color; color: $font-color; font-weight: 400;}
+header .logo{height:24px; margin-right:10px; display: inline-block;}
+footer {text-align:center; padding:60px 30px 30px;}
+
+.text-red{color: $red;}
+.text-yellow{color: $yellow;}
+.text-green{color: $green;}
+.text-blue{color: $blue;}
+
+.bg-red{background-color: $red;}
+.bg-yellow{background-color: $yellow; }
+.bg-green{background-color: $green;}
+.bg-blue{background-color: $blue;}
+
+.card-red{background-color: $red; color:#fff; box-shadow:0px 0px 10px rgba($red,1)}
+.card-yellow{background-color: $yellow; box-shadow:0px 0px 10px rgba($yellow,1)}
+.card-green{background-color: $green; color:#fff; box-shadow:0px 0px 10px rgba($green,1)}
+.card-blue{background-color: $blue; color:#fff; box-shadow:0px 0px 10px rgba($blue,1)}
+
+.btn-outline-red{border-color: $red; color:$red;}
+.btn-outline-red:hover{background-color: $red; color:#fff;}
+.btn-outline-blue{border-color: $blue; color:$blue;}
+.btn-outline-blue:hover{background-color: $blue; color:#fff;}
+
+/* Page */
+#home{
+    h1{text-align:center;}
+    h2{text-align:center; font-family: monospace;}
+} 
+
+#about{
+    h1{text-align:center; padding:30px;}
+    h2{text-align:center; padding-top:15px; padding-bottom:30px;}
+    .card{margin-bottom:30px;}
+    .bio{padding:50px 100px; text-align: center; font-size:18px;}
+    .profile-image{
+        overflow:hidden; text-align:center; 
+
+        img{width:300px; border-radius:50%;  display: inline-block; box-shadow:0px 0px 10px rgba(0,0,0, 0.1); }
+    }
+
+    .information{
+        h2{color: $blue;}
+        .card-body div{padding-bottom:15px;}
+    }
+
+    .job{
+        h2{color:$red;}
+
+        .timeline{
+            border-left:1px solid $red;
+            i.bi,  .title{color:$red;}
+        }
+    }
+
+    .skill{
+        h2{text-align:center; padding-bottom:30px; color:$blue;}
+        svg{
+            display:inline-block; width:48px; margin:0 10px 20px; fill:$blue;
+
+            circle{fill:$blue;}
+        }
+    }
+} 
+
+#about .timeline{position:relative; margin-left:15px; padding:0 0 30px 30px; border-left:1px solid $red;}
+#about .timeline i.bi{position: absolute; top: 0; left: -15px; font-size:28px; background-color:#fff;}
+#about .timeline .title{font-size:20px;}
+#about .timeline .location{margin-left:15px;}
+#about .timeline ul{list-style:none; padding: 10px 0 0 0px; margin-bottom:0;}
+#about .timeline ul li{padding-bottom:10px;}
+
+#about .education{margin-bottom:30px;}
+#about .education h2{color:$blue;}
+#about .education .timeline{border-left:1px solid $blue;}
+#about .education .timeline i.bi, #about .education .timeline .title{color:$blue;}
+
+#projects{
+    h2 {padding:30px;}
+
+    .projects{
+        text-align:center;
+
+        .card{
+            position: relative; z-index:10;
+            margin-bottom:30px; padding-top:180px; transition: transform 0.4s;
+
+            .thumb{
+                position:absolute; padding-top:30px; top:0px; left:1px; right:1px; bottom:0; text-align:center; overflow:hidden;
+                
+                img{width:75%; height:auto; transition: transform 0.4s;}
+            }
+            .card-body{position:relative; z-index:2; background:#fff; border-radius:0 0 30px 30px;}
+        }
+
+        a:hover{
+            .thumb{top:0px;}
+            .card{transform: scale(1.05);}
+            img{transform: scale(1.35) rotate(-15deg)}
+        }
+    }
+}
+
+#project-detail{
+    h2 {padding: 15px 0 0 15px;}
+    .card {
+        border: none; background: #fff; border-radius: 15px; padding: 15px;
+        .image{text-align:center;}
+
+        .tag {display: flex; padding: 0 0 15px 15px;
+            div {margin-right: 15px;}
+        }
+
+        .btn {margin-left: auto;}
+    }
+}
+
+#services{
+    h1{text-align:center; margin-bottom:30px;}
+    .card{
+        text-align:center; margin-bottom:30px;
+        
+        ul{
+            list-style: none; padding:0;
+        
+            li{padding:5px;}
+        }
+
+        .card-title{font-size:30px; font-weight:800;}
+    }
+}
+
+#contact {
+    position: relative;
+    margin-top:60px;
+    padding-top:30px;
+    min-height: 100px;
+
+    .information{position: relative; z-index:2; padding-left:3rem;}
+
+    .img-responsive {
+        animation: MoveUpDown 1.5s linear infinite;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+/* animation */
+.bubble{
+    position: fixed; top: 0; left: 0; z-index:-1; width: 100%; height: 100%; overflow: hidden;
+
+    li{
+        position: absolute; display: block; list-style: none; width: 20px; height: 20px; background: rgba(0, 0, 0, 0.1); animation: animate 25s linear infinite;bottom: -150px;
+    
+        &:nth-child(1){left: 25%; width: 80px; height: 80px; background: rgba($red, 1); animation-delay: 0s;}
+        &:nth-child(2){left: 10%; width: 20px; height: 20px; background: rgba($yellow, 1); animation-delay: 2s; animation-duration: 12s;}
+        &:nth-child(3){left: 70%; width: 20px; height: 20px; background: rgba($green, 1); animation-delay: 4s;}
+        &:nth-child(4){left: 40%; width: 60px; height: 60px; background: rgba($blue, 1); animation-delay: 0s; animation-duration: 18s;}
+        &:nth-child(5){left: 65%; width: 20px; height: 20px; background: rgba($red, 1); animation-delay: 0s;}
+        &:nth-child(6){left: 75%; width: 110px; height: 110px; background: rgba($yellow, 1); animation-delay: 3s;}
+        &:nth-child(7){left: 35%; width: 150px; height: 150px; background: rgba($green, 1); animation-delay: 7s;}
+        &:nth-child(8){left: 50%; width: 25px; height: 25px; background: rgba($blue, 1); animation-delay: 15s; animation-duration: 45s;}
+        &:nth-child(10){left: 85%; width: 150px; height: 150px; background: rgba($yellow, 1); animation-delay: 0s; animation-duration: 11s;}
+    }
+}
+
+@keyframes animate {
+    0%{ transform: translateY(0) rotate(0deg); opacity: 1; border-radius: 0;}
+    100%{ transform: translateY(-1000px) rotate(720deg); opacity: 0; border-radius: 50%;}
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: -60px;
+    }
+    50% {
+      bottom: -40px;
+    }
+  }
